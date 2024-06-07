@@ -1,0 +1,5 @@
+-hover sur image coloration + sharinga qui tourne 
+
+- passer le back ground en degrader 
+
+-box shadow sur le image

@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --main-color: #8e789e;
+    /* #B666D2 */
+    --secondary-color: #e9eef5;
+    --third-color: #CFADE9;
+    --font-size: 16px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.styleSec1 {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    min-height: 50Vh;
+    padding-bottom: 5%;
+}
+
+.styleSec2 {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    min-height: 50Vh;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+h2 {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+
+/* //////////////////////////////////// entete//////////////////////////////////////////////////////////////////////////////////// */
+
+#entete {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#entete img {
+    border-radius: 50%;
+}
+
+#entete h2 {
+    font-size: 60px;
+}
+
+#entete article {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 150px;
+    position: absolute;
+}
+
+#KanjiNom {
+    top: 10%;
+    left: 20%;
+}
+
+#KanjiClan {
+    top: 30%;
+    right: 20%;
+}
+
+.scrolldawn {
+    position: absolute;
+    bottom: 100px;
+}
+
+.scrolldawn img {
+    width: 70px;
+    transition: width 0.3s ease, bottom 0.3s ease;
+}
+
+.scrolldawn:hover img {
+    width: 80px;
+    bottom: 25px;
+}
+
+
+/* ////////////////////////////////////////////// presentation ///////////////////////////////////////////////////////////////////////// */
+
+#presentation {
+    padding: 10%;
+    height: 75vh;
+}
+
+.grid-prensetation {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    height: 75vh;
+}
+
+.presentation-info {
+    grid-column: 1 / span 1;
+    /* Commence à la première colonne, s'étend sur 1 colonne */
+    grid-row: 1 / span 2;
+    /* Commence à la première ligne, s'étend sur 2 lignes */
+    text-align: initial;
+    font-size: 35px;
+    padding-left: 20%;
+}
+
+.presentation-img {
+    grid-column: 2 / span 1;
+    /* Commence à la deuxieme colonne, s'étend sur 1 colonne */
+    grid-row: 1 / span 2;
+    /* Commence à la première ligne, s'étend sur 2 lignes */
+}
+
+.presentation-caract {
+    grid-column: 1 / span 1;
+    /* Commence à la deuxième colonne, s'étend sur 1 colonne */
+    grid-row: 2 / span 1;
+    /* Commence à la deuxième ligne, s'étend sur 1 ligne */
+    padding-left: 20%;
+}
+
+.presentation-info h4 {
+    padding: 15px;
+}
+
+.presentation-info img {
+    width: 70px;
+}
+
+.presentation-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-info article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.presentation-img img {
+    height: 100%;
+}
+
+.presentation-caract {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.presentation-caract p {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    width: 100px;
+    margin: 7px;
+    border-radius: 30px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* /////////////////////////////////////////hisoire //////////////////////////////////////////////////////////////////////////////////// */
+
+.histoire_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.histoire_pt1,
+.histoire_pt3 {
+    padding: 30px;
+    grid-column: 1 / 3;
+}
+
+.histoire_pt2 {
+    padding: 30px;
+    grid-column: 2 / 4;
+}
+
+.histoire_grid img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.histoire_grid p {
+    border: var(--main-color) 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.histoire_pt1+img,
+.histoire_pt3+img {
+    grid-column: 3 / 4;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// objectif ////////////////////////////////////////////////////////////////////////// */
+
+.ojectifContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.objectif {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+.objectif img {
+    width: 400px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// competence ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.competence_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.competence {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.competence div {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+
+.competence_container img {
+    max-width: 500px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////HRP //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.hrpContainer {
+    display: flex;
+    padding: 10%;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.hrpContainer h3 {
+    font-size: 38px;
+}
+
+.hrp-info {
+    width: 50%;
+}
+
+.hrp-info h4 {
+    margin-bottom: 30px;
+}
+
+#infoHRPJ {
+    text-align: initial;
+}
